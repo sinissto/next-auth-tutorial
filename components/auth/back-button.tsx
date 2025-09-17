@@ -16,7 +16,9 @@ export const BackButton = ({ href, label }: BackButtonProps) => {
       size={"sm"}
       asChild={true}
     >
-      <Link href={href}>{label}</Link>
+      <Link href={href} className={"bg-accent"}>
+        {label}
+      </Link>
     </Button>
   );
 };
