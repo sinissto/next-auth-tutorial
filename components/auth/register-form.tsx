@@ -50,7 +50,7 @@ export default function RegisterForm() {
 
   return (
     <CardWrapper
-      headerLabel={"Register your accountfd"}
+      headerLabel={"Register your account"}
       backButtonLabel={"Already have an account? Login here!"}
       backButtonHref={"/auth/login"}
       showSocial={true}

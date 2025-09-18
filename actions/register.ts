@@ -4,9 +4,8 @@ import * as z from "zod";
 import { RegisterSchema } from "@/schemas";
 
 export const register = async (values: z.infer<typeof RegisterSchema>) => {
+  console.log(RegisterSchema);
   const validatedFields = RegisterSchema.safeParse(values);
-
-  console.log("Validated Fields:", validatedFields);
 
   if (!validatedFields.success)
     return { error: "Invalid fields! Deder popravi!" };
