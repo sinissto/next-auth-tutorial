@@ -47,10 +47,8 @@ export default function LoginForm() {
 
     startTransition(() =>
       login(values).then((data) => {
-        if (data) setError(data.error);
-
-        // todo: Add when add 2FA
-        // setSuccess(data.success);
+        setError(data?.error);
+        setSuccess(data?.success);
       })
     );
   };

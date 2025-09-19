@@ -41,6 +41,18 @@ export const {
     },
   },
   callbacks: {
+    signIn: async ({ user, account }) => {
+      // Allow OAuth withouth verified email
+      if (account?.provider !== "credentials") return true;
+
+      if (!user.id) return false;
+      const existingUser = await getUserById(user.id);
+
+      if (!existingUser) return false;
+      if (!existingUser.emailVerified) return false;
+
+      return true;
+    },
     session: async ({ session, token }) => {
       if (token.sub && session.user) session.user.id = token.sub;
 
