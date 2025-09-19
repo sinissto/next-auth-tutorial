@@ -42,7 +42,6 @@ export const {
   },
   callbacks: {
     session: async ({ session, token }) => {
-      console.log("Session Token", { token });
       if (token.sub && session.user) session.user.id = token.sub;
 
       return { ...session, user: { ...session.user, role: token.role } };
