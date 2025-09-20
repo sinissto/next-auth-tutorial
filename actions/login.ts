@@ -28,7 +28,7 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
     );
 
     await sendVerificationEmail(
-      verificationToken.email,
+      verificationToken.email, // ako je user promenio email, salje se na novi email
       verificationToken.token
     );
 
