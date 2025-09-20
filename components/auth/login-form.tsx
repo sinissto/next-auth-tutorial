@@ -39,7 +39,7 @@ export default function LoginForm() {
     resolver: zodResolver(LoginSchema),
     defaultValues: {
       email: "sinisha.stojanovic@gmail.com",
-      password: "guresha34",
+      password: "GUResha34!NA",
     },
   });
 
@@ -64,7 +64,11 @@ export default function LoginForm() {
             setShowTwoFactor(true);
           }
         })
-        .catch(() => setError("Something went wrong, please try again."))
+        .catch((error) => {
+          if (error.message !== "NEXT_REDIRECT")
+            // ovo je samo da ubijem error koji baca next.js na redirect
+            setError("Something went wrong, please try again.");
+        })
     );
   };
 

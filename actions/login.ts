@@ -86,13 +86,12 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
       redirectTo: DEFAULT_LOGIN_REDIRECT,
     });
   } catch (error) {
-    console.log(error);
     if (error instanceof AuthError) {
       switch (error.type) {
         case "CredentialsSignin":
           return { error: "Invalid credential (email or password)" };
         default:
-          return { error: "Something went wrong during login" };
+          return { error: "Something went wrong during login!" };
       }
     }
     throw error;
