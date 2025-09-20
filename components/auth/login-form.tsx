@@ -38,8 +38,8 @@ export default function LoginForm() {
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
     defaultValues: {
-      email: "",
-      password: "",
+      email: "sinisha.stojanovic@gmail.com",
+      password: "guresha34",
     },
   });
 
@@ -151,7 +151,7 @@ export default function LoginForm() {
           <FormError message={error || urlError} />
           <FormSuccess message={success} />
           <Button type={"submit"} className={"w-full"} disabled={isPending}>
-            {showTwoFactor ? 'Confirm':'Login'}
+            {showTwoFactor ? "Confirm" : "Login"}
           </Button>
         </form>
       </Form>
