@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Navbar from "@/app/(protected)/_components/navbar";
 
 interface ProtectedLayoutProps {
   children: ReactNode;
@@ -14,6 +15,7 @@ export default function ProtectedLayout({ children }: ProtectedLayoutProps) {
         "h-full w-full flex flex-col gap-y-10 items-center justify-center"
       }
     >
+      <Navbar />
       {children}
     </div>
   );
