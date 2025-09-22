@@ -1,4 +1,12 @@
+# NEXT AUTH
+
+## Source of the Tutorial
+
+[YouTube Tutorial](https://www.youtube.com/watch?v=1MTyCvS05V4)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+It uses the `app` directory and [TypeScript](https://www.typescriptlang.org/).
 
 ## Getting Started
 
@@ -26,11 +34,18 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next Auth.js Documentation](https://authjs.dev/getting-started/installation?framework=Next.js) - learn about NextAuth.js features and API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Other Used Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - learn about Tailwind CSS features and API.
+- [Prisma Documentation](https://www.prisma.io/docs/) - learn about Prisma features
+- [Shadcn/ui Documentation](https://ui.shadcn.com/docs) - learn about shadcn/ui features and API.
+- [Neon Documentation](https://neon.com/) - learn about Neon features and API.
+- [Resend Documentation](https://resend.com/home) - learn about Resend features and API.
+- [Zod Documentation](https://zod.dev/) - learn about Zod features and API.
+- [React Hook Form Documentation](https://react-hook-form.com/) - learn about React Hook Form features and API.
+- 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
